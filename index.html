@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>A. Hudairi</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar-expand-lg navbar navbar-dark bg-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Logo</a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link 1</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="jumbotron">
+        <h1 class="display-4">Hai, Saya Ahmad Hudairi</h1>
+        <p class="lead">Ini Adalah Website Sederhana untuk :</p>
+        <li>
+          Menghitung jumlah huruf hidup dan mati serta daftar huruf dari kalimat
+          yang di input - <span class="text-info">double huruf tidak di hitung</span>
+        </li>
+        <li>Mengurutkan Abjad dari kalimat yang di input</li>
+        <hr class="my-4" />
+
+        <div class="mb-3">
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Input Disini :</label>
+            <textarea class="form-control" id="kotakTeks" rows="3"></textarea>
+          </div>
+          <a class="btn btn-primary btn-lg" id="btnSubmit">Sumbit</a>
+          <a class="btn btn-primary btn-lg" id="btnReset">Reset</a>
+        </div>
+
+        <ul class="list-group">
+          <li class="list-group-item align-items-center">
+            Jumlah Huruf Vocal/Hidup :
+            <p class="badge badge-primary" id="elementVocals">0</p>
+            <p>Daftar Huruf Vocal/Hidup : <span id="listVokal" class="h4">-</span></p>
+          </li>
+          <li class="list-group-item align-items-center">
+            Jumlah Huruf Consonant/Mati :
+            <p class="badge badge-primary" id="jumlahMati">0</p>
+            <p>Daftar Huruf Consonant/Mati : <span id="listMati" class="h4">-</span></p>
+          </li>
+          <li class="list-group-item align-items-center">
+            Urutan Abjad Dari Kalimat atau Kata Di Atas :
+            <p id="urutAbjad" class="h4">-</p>
+            <!-- <span id="sumAbjad" class="badge badge-primary"></span> -->
+          </li>
+        </ul>
+
+        <hr class="my-4" />
+        <div >
+          <h6>Referensi :</h6>
+          <ul>
+            <li>Hitung huruf vocal - <a href="https://github.com/widiarifki/pemrograman-internet-3/blob/master/huruf_vokal.html" target="_blank">disini</a></li>
+            <li>Hapus Data Duplikat di Array - <a href="https://www.javascripttutorial.net/array/javascript-remove-duplicates-from-array/" target="_blank">disini</a></li>
+            <li>Template Website - <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/" target="_blank" rel="noopener noreferrer">disini</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Fungsi Main -->
+    <script src="script.js"></script>
+  </body>
+</html>
